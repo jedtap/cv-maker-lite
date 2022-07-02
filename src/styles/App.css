@@ -6,7 +6,3 @@
   grid-template-rows: 20px auto auto auto auto 100px;
   gap: 30px;
 }
-
-.education {
-  border: 2px solid red;
-}

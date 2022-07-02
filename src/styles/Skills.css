@@ -1,0 +1,21 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills > h2 {
+  font-size: 22px;
+}
+
+.skills-group {
+  display: flex;
+  gap: 10px;
+}
+
+.skills-group > h3 {
+  font-size: 18px;
+  border: 2px solid rgb(148, 148, 148);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
