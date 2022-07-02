@@ -1,12 +1,30 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React, { Component } from "react";
+// import Overview from "./components/Overview";
 
-function App() {
-  return (
-    <div className="App">
-      Hey there
-    </div>
-  );
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      task: { text: '', id: uniqid() }, //uniquid
+      tasks: [],
+    };
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      task : { text: e.target.value, id: this.state.task.id, } //uniquid
+    });
+  };
+
+
+  render() {
+
+    return (
+
+    );
+
+  }
 }
 
 export default App;
