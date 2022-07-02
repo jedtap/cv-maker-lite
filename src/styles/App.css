@@ -1,0 +1,12 @@
+.main {
+  width: 800px;
+  margin: auto;
+
+  display: grid;
+  grid-template-rows: 20px auto auto auto auto 100px;
+  gap: 30px;
+}
+
+.general, .work {
+  border: 2px solid red;
+}

@@ -1,0 +1,19 @@
+.general {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.general-left > h1 {
+  font-size: 26px;
+}
+
+.general-left > h2 {
+  font-size: 23px;
+}
+
+.general-right > h3 {
+  font-size: 18px;
+
+  display: grid;
+  justify-content: end;
+}
