@@ -1,0 +1,28 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work > h2 {
+  font-size: 22px;
+}
+
+.work-group {
+  border-left: 2px solid rgb(148, 148, 148);
+  margin-left: 10px;
+  padding-left: 10px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.work-left > h3, .work-right >h3 {
+  font-size: 18px;
+}
+
+.work-left > h4, .work-right >h4 {
+  font-size: 16px;
+  margin: 0;
+}
