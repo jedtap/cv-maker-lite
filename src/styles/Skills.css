@@ -10,10 +10,12 @@
 
 .skills-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.skills-group > h3 {
+.skills-group > input {
+  width: 250px;
   font-size: 18px;
   border: 2px solid rgb(148, 148, 148);
   border-radius: 10px;

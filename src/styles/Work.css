@@ -18,11 +18,18 @@
   gap: 20px;
 }
 
-.work-left > h3, .work-right >h3 {
+.work-left > .work-subtitle, .work-right > .work-subtitle {
   font-size: 18px;
+  padding: 0;
 }
 
-.work-left > h4, .work-right >h4 {
+.work-left > .work-caption {
   font-size: 16px;
-  margin: 0;
+  padding: 0;
+}
+
+.work-right > textarea {
+  font-size: 14px;
+  padding: 0;
+  resize: none;
 }

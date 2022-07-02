@@ -10,25 +10,25 @@ class Work extends Component {
         
         <div className="work-group">
           <div className="work-left">
-            <h3>Coca-Cola Beverages Philippines Inc</h3>
-            <h4>Davao City Philippines</h4>
-            <h4>2000 - 1999</h4>
+            <input className="form-control-plaintext work-subtitle" type="text" placeholder="Company Name" value="Coca-Cola Beverages Philippines Inc" />
+            <input className="form-control-plaintext work-caption" type="text" placeholder="Company City, Country" value="Davao City Philippines" />
+            <input className="form-control-plaintext work-caption" type="text" placeholder="YEAR - YEAR" value="2000 - 1999" />
           </div>
           <div className="work-right">
-            <h3>Account managing officer of the East Coast</h3>
-            <h4>Descriptions go here</h4>
+            <input className="form-control-plaintext work-subtitle" type="text" placeholder="Job Title" value="Account managing officer" />
+            <textarea className="form-control-plaintext" placeholder="Describe your main highlight/achievement!" rows="3" value="Describe the main highlight/achievement!" /> 
           </div>
         </div>
 
         <div className="work-group">
           <div className="work-left">
-            <h3>Coca-Cola Beverages Philippines Inc</h3>
-            <h4>Davao City Philippines</h4>
-            <h4>2000 - 1999</h4>
+            <input className="form-control-plaintext work-subtitle" type="text" placeholder="Company Name" value="Coca-Cola Beverages Philippines Inc" />
+            <input className="form-control-plaintext work-caption" type="text" placeholder="Company City, Country" value="Davao City Philippines" />
+            <input className="form-control-plaintext work-caption" type="text" placeholder="YEAR - YEAR" value="2000 - 1999" />
           </div>
           <div className="work-right">
-            <h3>Account managing officer of the East Coast</h3>
-            <h4>Descriptions go here</h4>
+            <input className="form-control-plaintext work-subtitle" type="text" placeholder="Job Title" value="Account managing officer" />
+            <textarea className="form-control-plaintext" placeholder="Describe your main highlight/achievement!" rows="3" value="Describe the main highlight/achievement!" /> 
           </div>
         </div>
         

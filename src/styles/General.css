@@ -1,19 +1,20 @@
 .general {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 15px;
 }
 
-.general-left > h1 {
+.general-left > .fullname {
   font-size: 28px;
+  padding: 0;
 }
 
-.general-left > h2 {
-  font-size: 26px;
+.general-left > .occupation {
+  font-size: 20px;
+  padding: 0;
 }
 
-.general-right > h3 {
+.general-right > input {
   font-size: 18px;
-
-  display: grid;
-  justify-content: end;
+  padding: 0;
 }
