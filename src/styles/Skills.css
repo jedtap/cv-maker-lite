@@ -4,8 +4,9 @@
   gap: 20px;
 }
 
-.skills > span > h2 {
+.skills-header > h2 {
   font-size: 22px;
+  margin: 0;
 }
 
 .skills-group {
@@ -15,16 +16,33 @@
 }
 
 .skills-group > span {
-  width: 250px;
+  width: 275px;
   font-size: 18px;
   border: 2px solid rgb(148, 148, 148);
   border-radius: 10px;
   padding: 5px 10px;
 
   display: flex;
+  align-items: center;
 }
 
 
-.skills-group > span > span {
-  padding: 3px 7px;
+.skills-delete {
+  padding: 0 7px;
+  justify-self: center;
 }
+
+
+:hover.skills-add, :hover.skills-delete {
+  transition: transform 0.5s ease-in-out 0.1s;
+  transform:  rotate(180deg);
+  cursor: pointer;
+}
+
+.skills-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+

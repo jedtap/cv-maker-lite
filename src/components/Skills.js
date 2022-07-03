@@ -6,26 +6,27 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills">
-        <span>
-          <h2>Relevant Skills <span>+</span></h2>
-        </span>
+        <div className="skills-header">
+          <h2>Relevant Skills</h2>
+          <div className="skills-add">+</div>
+        </div>
 
         <div className="skills-group">
           <span>
             <input className="form-control-plaintext" type="text" placeholder="Your Skill Here" value="JavaScript" />
-            <span> x </span>
+            <div className="skills-delete"> x </div>
           </span>
           <span>
             <input className="form-control-plaintext" type="text" placeholder="Your Skill Here" value="React JS" />
-            <span> x </span>
+            <div className="skills-delete"> x </div>
           </span>
           <span>
             <input className="form-control-plaintext" type="text" placeholder="Your Skill Here" value="Project Management" />
-            <span> x </span>
+            <div className="skills-delete"> x </div>
           </span>
           <span>
             <input className="form-control-plaintext" type="text" placeholder="Your Skill Here" value="Portfolio Management" />
-            <span> x </span>
+            <div className="skills-delete"> x </div>
           </span>
         </div> 
       </div>

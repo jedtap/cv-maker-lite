@@ -6,8 +6,9 @@
 
 }
 
-.education > span > h2 {
+.education-header > h2 {
   font-size: 22px;
+  margin: 0;
 }
 
 .education-group {
@@ -40,4 +41,16 @@
 .education-delete {
   align-self: center;
   justify-self: center;
+}
+
+:hover.education-add, :hover.education-delete {
+  transition: transform 0.5s ease-in-out 0.1s;
+  transform:  rotate(180deg);
+  cursor: pointer;
+}
+
+.education-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
