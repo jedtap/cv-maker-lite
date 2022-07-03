@@ -4,7 +4,7 @@
   gap: 20px;
 }
 
-.skills > h2 {
+.skills > span > h2 {
   font-size: 22px;
 }
 
@@ -14,10 +14,17 @@
   gap: 10px;
 }
 
-.skills-group > input {
+.skills-group > span {
   width: 250px;
   font-size: 18px;
   border: 2px solid rgb(148, 148, 148);
   border-radius: 10px;
   padding: 5px 10px;
+
+  display: flex;
+}
+
+
+.skills-group > span > span {
+  padding: 3px 7px;
 }

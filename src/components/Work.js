@@ -6,7 +6,9 @@ class Work extends Component {
   render() {
     return (
       <div className="work">
-        <h2>Work Experience</h2>
+        <span>
+          <h2>Work Experience <span>+</span></h2>
+        </span>
         
         <div className="work-group">
           <div className="work-left">
@@ -17,6 +19,9 @@ class Work extends Component {
           <div className="work-right">
             <input className="form-control-plaintext work-subtitle" type="text" placeholder="Job Title" value="Account managing officer" />
             <textarea className="form-control-plaintext" placeholder="Describe your main highlight/achievement!" rows="3" value="Describe the main highlight/achievement!" /> 
+          </div>
+          <div className="work-delete">
+            X
           </div>
         </div>
 
@@ -29,6 +34,9 @@ class Work extends Component {
           <div className="work-right">
             <input className="form-control-plaintext work-subtitle" type="text" placeholder="Job Title" value="Account managing officer" />
             <textarea className="form-control-plaintext" placeholder="Describe your main highlight/achievement!" rows="3" value="Describe the main highlight/achievement!" /> 
+          </div>
+          <div className="work-delete">
+            X
           </div>
         </div>
         

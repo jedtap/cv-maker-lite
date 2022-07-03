@@ -6,7 +6,7 @@
 
 }
 
-.education > h2 {
+.education > span > h2 {
   font-size: 22px;
 }
 
@@ -16,7 +16,7 @@
   padding-left: 10px;
 
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto 30px;
   gap: 20px;
 }
 
@@ -34,4 +34,10 @@
   font-size: 14px;
   padding: 0;
   resize: none;
+}
+
+
+.education-delete {
+  align-self: center;
+  justify-self: center;
 }

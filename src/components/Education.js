@@ -6,7 +6,9 @@ class Education extends Component {
   render() {
     return (
       <div className="education">
-        <h2>Education</h2>
+        <span>
+          <h2>Education <span>+</span></h2>
+        </span>
 
         <div className="education-group">
           <div className="education-left">
@@ -16,6 +18,9 @@ class Education extends Component {
           <div className="education-right">
             <input className="form-control-plaintext education-subtitle" type="text" placeholder="Degree/Certificate Received" value="Bachelor of Science in Mechanical Engr" />
             <textarea className="form-control-plaintext" placeholder="Showcase your achievements here!" rows="2" value="Foresee over 44 projects and initiatives between Technology and Business" /> 
+          </div>
+          <div className="education-delete">
+            X
           </div>
         </div>
 
@@ -27,6 +32,9 @@ class Education extends Component {
           <div className="education-right">
             <input className="form-control-plaintext education-subtitle" type="text" placeholder="Degree/Certificate Received" value="Bachelor of Science in Mechanical Engr" />
             <textarea className="form-control-plaintext" placeholder="Showcase your achievements here!" rows="2" value="Foresee over 44 projects and initiatives between Technology and Business" /> 
+          </div>
+          <div className="education-delete">
+            X
           </div>
         </div>
 

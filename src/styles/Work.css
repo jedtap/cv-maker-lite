@@ -4,7 +4,7 @@
   gap: 20px;
 }
 
-.work > h2 {
+.work > span > h2 {
   font-size: 22px;
 }
 
@@ -14,7 +14,7 @@
   padding-left: 10px;
 
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto 30px;
   gap: 20px;
 }
 
@@ -32,4 +32,9 @@
   font-size: 14px;
   padding: 0;
   resize: none;
+}
+
+.work-delete {
+  align-self: center;
+  justify-self: center;
 }
