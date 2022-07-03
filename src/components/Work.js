@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import '../styles/Work.css';
+// import DeleteItem from './DeleteItem'
 
 class Work extends Component {
 
@@ -62,9 +63,12 @@ class Work extends Component {
     workDelete.appendChild(document.createTextNode(" x "));
     workDelete.setAttribute("class","work-delete");
     workDelete.setAttribute("data-id",timeStamp);
+    workDelete.setAttribute("onclick", `{
+      const item = document.querySelector("[data-id='${timeStamp}']");
+      item.style.display = 'none';
+    }`);
 
-
-
+    
     workRight.appendChild(workJob);
     workRight.appendChild(workAchievement);
     workLeft.appendChild(workCompanyName);

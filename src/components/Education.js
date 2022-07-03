@@ -57,8 +57,12 @@ class Education extends Component {
     eduDelete.appendChild(document.createTextNode(" x "));
     eduDelete.setAttribute("class","education-delete");
     eduDelete.setAttribute("data-id",timeStamp);
+    eduDelete.setAttribute("onclick", `{
+      const item = document.querySelector("[data-id='${timeStamp}']");
+      item.style.display = 'none';
+    }`);
 
-
+    
     eduLeft.appendChild(eduUni);
     eduLeft.appendChild(eduYear);
     eduRight.appendChild(eduDegree);

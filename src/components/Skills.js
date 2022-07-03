@@ -25,6 +25,11 @@ class Skills extends Component {
     skillsDelete.appendChild(document.createTextNode(" x "));
     skillsDelete.setAttribute("class","skills-delete");
     skillsDelete.setAttribute("data-id",timeStamp);
+    skillsDelete.setAttribute("onclick", `{
+      const item = document.querySelector("[data-id='${timeStamp}']");
+      item.style.display = 'none';
+    }`);
+
 
     skillsSpan.appendChild(skillsInput);
     skillsSpan.appendChild(skillsDelete);
