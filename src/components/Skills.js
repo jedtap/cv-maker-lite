@@ -3,7 +3,7 @@ import '../styles/Skills.css';
 
 class Skills extends Component {
 
-  skillsNewEntry = () => {
+  skillsNewEntry = (props) => {
     // Goal is to generate this DOM:
     // <span>
     //   <input className="form-control-plaintext" type="text" placeholder="Your Skill Here"/>
@@ -11,8 +11,10 @@ class Skills extends Component {
     // </span>
 
     const skillsSection = document.querySelector(".skills-group");
+    let timeStamp = props.timeStamp
     let skillsSpan, skillsInput, skillsDelete;
     skillsSpan = document.createElement("span");
+    skillsSpan.setAttribute("data-id",timeStamp);
 
     skillsInput = document.createElement("input");
     skillsInput.setAttribute("class","form-control-plaintext");
@@ -22,6 +24,7 @@ class Skills extends Component {
     skillsDelete = document.createElement("div");
     skillsDelete.appendChild(document.createTextNode(" x "));
     skillsDelete.setAttribute("class","skills-delete");
+    skillsDelete.setAttribute("data-id",timeStamp);
 
     skillsSpan.appendChild(skillsInput);
     skillsSpan.appendChild(skillsDelete);

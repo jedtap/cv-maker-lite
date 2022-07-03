@@ -3,7 +3,7 @@ import '../styles/Work.css';
 
 class Work extends Component {
 
-  workNewEntry = () => {
+  workNewEntry = (props) => {
     // Goal is to display the template:
     // <div className="work-group">
     //   <div className="work-left">
@@ -19,11 +19,13 @@ class Work extends Component {
     // </div>
 
     const workSection = document.querySelector(".work");
+    let timeStamp = props.timeStamp
     let workGroup, workLeft, workCompanyName, workCompanyLocation, workCompanyYear;
     let workRight, workJob, workAchievement, workDelete;
 
     workGroup = document.createElement("div");
     workGroup.setAttribute("class","work-group");
+    workGroup.setAttribute("data-id",timeStamp);
 
     workLeft = document.createElement("div");
     workLeft.setAttribute("class","work-left");
@@ -59,6 +61,8 @@ class Work extends Component {
     workDelete = document.createElement("div");
     workDelete.appendChild(document.createTextNode(" x "));
     workDelete.setAttribute("class","work-delete");
+    workDelete.setAttribute("data-id",timeStamp);
+
 
 
     workRight.appendChild(workJob);

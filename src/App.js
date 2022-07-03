@@ -6,21 +6,6 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 
 class App extends Component {
-  // constructor() {
-  //   super();
-  //   // this.state = {
-  //   //   task: { text: '', id: uniqid() }, //uniquid
-  //   //   tasks: [],
-  //   // };
-  // }
-
-  // handleChange = (e) => {
-  //   this.setState({
-  //     task : { text: e.target.value, id: this.state.task.id, } //uniquid
-  //   });
-  // };
-
-
   render() {
     return (
       <div className="main">

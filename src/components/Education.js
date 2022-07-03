@@ -3,7 +3,7 @@ import '../styles/Education.css';
 
 class Education extends Component {
 
-  educationNewEntry = () =>{
+  educationNewEntry = (props) =>{
     // Goal is to generate this DOM:
     // <div className="education-group">
     //   <div className="education-left">
@@ -18,12 +18,14 @@ class Education extends Component {
     // </div>
 
     const educationSection = document.querySelector(".education");
+    let timeStamp = props.timeStamp
     let eduGroup, eduDelete;
     let eduLeft, eduUni, eduYear;
     let eduRight, eduDegree, eduAchievements;
 
     eduGroup = document.createElement("div");
     eduGroup.setAttribute("class","education-group");
+    eduGroup.setAttribute("data-id",timeStamp);
 
     eduLeft = document.createElement("div");
     eduLeft.setAttribute("class","education-left");
@@ -54,6 +56,7 @@ class Education extends Component {
     eduDelete = document.createElement("div");
     eduDelete.appendChild(document.createTextNode(" x "));
     eduDelete.setAttribute("class","education-delete");
+    eduDelete.setAttribute("data-id",timeStamp);
 
 
     eduLeft.appendChild(eduUni);
